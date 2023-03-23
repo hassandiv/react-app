@@ -4,6 +4,7 @@ import Form from "./challengeOne/Form";
 import Folders from "./challengeTwo/Folders";
 import FormApi from "./challengeThree/FormApi";
 import FormApiTwo from "./challengeFour/FormApiTwo";
+import GuessingGame from "./challengeFive/GuessingGame";
 
 const App = () => {
   return (
@@ -11,8 +12,9 @@ const App = () => {
       {/* <Layout /> */}
       <Form />
       <Folders />
-      {/* <FormApi /> */}
+      <FormApi />
       <FormApiTwo />
+      <GuessingGame />
     </div>
   );
 };

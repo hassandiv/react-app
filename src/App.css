@@ -3,6 +3,7 @@
   height: 100vh;
   width: 600px;
   margin: 0 auto;
+  margin-bottom: 500px;
 }
 
 .App-logo {
@@ -58,4 +59,18 @@ button {
 .nested-directory {
   margin: 0 auto;
   margin-bottom: 100px;
+}
+.guess-game {
+  margin-top: 100px;
+}
+.guess-me {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.guess-game button {
+  margin-right: 49px;
+  padding: 5px;
 }
