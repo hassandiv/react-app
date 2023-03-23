@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Folders = () => {
   const files = {
     children: [
@@ -6,6 +8,29 @@ const Folders = () => {
         children: [
           {
             name: "express",
+            children: [
+              {
+                name: "UI",
+                children: [
+                  {
+                    name: "UI Tools Kit",
+                    children: [
+                      {
+                        name: "Parts",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            name: "jest",
+            children: [
+              {
+                name: "UI",
+              },
+            ],
           },
         ],
       },
@@ -18,6 +43,33 @@ const Folders = () => {
     ],
   };
 
-  return "hello";
+  const NestedDirectories = ({ name, children }) => {
+    const [isExpanded, setIsExpnaded] = useState(false);
+    return (
+      <div>
+        {children ? (
+          <button onClick={() => setIsExpnaded(!isExpanded)}>
+            {"+ " + name}
+          </button>
+        ) : (
+          name
+        )}
+        {isExpanded &&
+          children?.map((entry, idx) => (
+            <NestedDirectories {...entry} key={idx} />
+          ))}
+      </div>
+    );
+  };
+
+  //{...entry} spreading entry over means we get name, children ...etc
+
+  return (
+    <div className="nested-directory">
+      {files.children.map((entry, idx) => (
+        <NestedDirectories {...entry} key={idx} />
+      ))}
+    </div>
+  );
 };
 export default Folders;

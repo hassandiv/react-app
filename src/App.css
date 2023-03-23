@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
   height: 100vh;
 }
 
@@ -54,4 +54,8 @@ input {
 }
 button {
   margin-top: 10px;
+}
+.nested-directory {
+  width: 400px;
+  margin: 0 auto;
 }
