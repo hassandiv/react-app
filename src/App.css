@@ -3,7 +3,6 @@
   height: 100vh;
   width: 600px;
   margin: 0 auto;
-  margin-bottom: 500px;
 }
 
 .App-logo {
@@ -73,4 +72,17 @@ button {
 .guess-game button {
   margin-right: 49px;
   padding: 5px;
+}
+.click-area {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.mark {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: aqua;
 }
