@@ -2,13 +2,17 @@ import "./App.css";
 import Layout from "./components/layout/Layout";
 import Form from "./challengeOne/Form";
 import Folders from "./challengeTwo/Folders";
+import FormApi from "./challengeThree/FormApi";
+import FormApiTwo from "./challengeFour/FormApiTwo";
 
 const App = () => {
   return (
     <div className="App">
       {/* <Layout /> */}
-      {/* <Form /> */}
+      <Form />
       <Folders />
+      {/* <FormApi /> */}
+      <FormApiTwo />
     </div>
   );
 };
