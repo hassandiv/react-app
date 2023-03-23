@@ -1,12 +1,16 @@
 import "./App.css";
 import Layout from "./components/layout/Layout";
+import Form from "./challengeOne/Form";
+import Folders from "./challengeTwo/Folders";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Layout />
+      {/* <Layout /> */}
+      {/* <Form /> */}
+      <Folders />
     </div>
   );
-}
+};
 
 export default App;
